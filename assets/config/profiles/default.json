@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "appKey": "default",
+  "identity": {
+    "displayName": "Learning Academy",
+    "shortName": "Academy",
+    "subtitle": "Learn Anything, Anytime",
+    "description": "A universal learning platform for mastering any subject",
+    "publisher": {
+      "name": "Tech Education Platform",
+      "website": "https://example.com",
+      "supportEmail": "support@example.com"
+    },
+    "version": "1.0.0",
+    "buildNumber": 1
+  },
+  "branding": {
+    "preset": "default",
+    "colors": {
+      "primary": "#6750A4",
+      "secondary": "#625B71"
+    },
+    "typography": {
+      "fontFamily": "Inter"
+    },
+    "spacing": {},
+    "borderRadius": {},
+    "assets": {
+      "logo": "assets/branding/default_logo.png"
+    }
+  },
+  "navigation": {
+    "type": "bottom_nav",
+    "destinations": [
+      {
+        "id": "home",
+        "labelKey": "home",
+        "icon": "home",
+        "route": "/",
+        "enabled": true
+      },
+      {
+        "id": "courses",
+        "labelKey": "courses",
+        "icon": "courses",
+        "route": "/courses",
+        "enabled": true
+      },
+      {
+        "id": "profile",
+        "labelKey": "profile",
+        "icon": "profile",
+        "route": "/profile",
+        "enabled": true
+      }
+    ],
+    "dashboard": {
+      "sections": [
+        {
+          "id": "continue_learning",
+          "type": "continue_learning",
+          "titleKey": "continue_learning",
+          "maxItems": 5,
+          "displayStyle": "list",
+          "enabled": true,
+          "order": 1
+        }
+      ],
+      "enableSearch": true,
+      "showWelcomeHeader": true
+    },
+    "initialRoute": "/"
+  },
+  "features": {
+    "courseCatalog": true,
+    "lessonReader": true,
+    "quizEngine": true,
+    "progressTracking": true
+  },
+  "localization": {
+    "defaultLocale": "en",
+    "supportedLocales": ["en", "id"],
+    "fallbackLocale": "en"
+  },
+  "content": {
+    "bundledEnabled": true
+  }
+}

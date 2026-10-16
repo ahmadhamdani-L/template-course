@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "1.0",
+  "appKey": "go_academy",
+  "identity": {
+    "displayName": "Go Programming Academy",
+    "shortName": "Go Academy",
+    "subtitle": "Master Go from Basics to Advanced",
+    "description": "Learn Go programming language with hands-on lessons, real-world projects, and interactive quizzes. From basics to advanced concepts.",
+    "publisher": {
+      "name": "Tech Education Platform",
+      "website": "https://example.com",
+      "supportEmail": "support@example.com",
+      "privacyPolicyUrl": "https://example.com/privacy",
+      "termsOfServiceUrl": "https://example.com/terms"
+    },
+    "version": "1.0.0",
+    "buildNumber": 1
+  },
+  "branding": {
+    "preset": "developer_blue",
+    "colors": {
+      "primary": "#00ADD8",
+      "secondary": "#5DC9E2",
+      "accent": "#CE3262",
+      "success": "#00A896",
+      "warning": "#F77F00",
+      "error": "#D62828"
+    },
+    "typography": {
+      "fontFamily": "Inter",
+      "codeFontFamily": "monospace",
+      "fontSizeScale": 1.0,
+      "lineHeightScale": 1.5
+    },
+    "spacing": {
+      "xs": 4.0,
+      "sm": 8.0,
+      "md": 16.0,
+      "lg": 24.0,
+      "xl": 32.0,
+      "xxl": 48.0
+    },
+    "borderRadius": {
+      "sm": 4.0,
+      "md": 8.0,
+      "lg": 12.0,
+      "xl": 16.0,
+      "xxl": 24.0
+    },
+    "assets": {
+      "logo": "assets/branding/go_academy_logo.png",
+      "logoDark": "assets/branding/go_academy_logo_dark.png",
+      "icon": "assets/branding/go_icon.png"
+    }
+  },
+  "navigation": {
+    "type": "bottom_nav",
+    "destinations": [
+      {
+        "id": "home",
+        "labelKey": "home",
+        "icon": "home",
+        "route": "/",
+        "enabled": true
+      },
+      {
+        "id": "courses",
+        "labelKey": "courses",
+        "icon": "courses",
+        "route": "/courses",
+        "enabled": true
+      },
+      {
+        "id": "profile",
+        "labelKey": "profile",
+        "icon": "profile",
+        "route": "/profile",
+        "enabled": true
+      }
+    ],
+    "dashboard": {
+      "sections": [
+        {
+          "id": "continue_learning",
+          "type": "continue_learning",
+          "titleKey": "continue_learning",
+          "maxItems": 3,
+          "displayStyle": "card",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "learning_streak",
+          "type": "learning_streak",
+          "titleKey": "learning_streak",
+          "maxItems": 1,
+          "displayStyle": "card",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "recommended_courses",
+          "type": "recommended_courses",
+          "titleKey": "recommended_courses",
+          "maxItems": 5,
+          "displayStyle": "carousel",
+          "navigationRoute": "/courses",
+          "enabled": true,
+          "order": 3
+        }
+      ],
+      "enableSearch": true,
+      "showWelcomeHeader": true
+    },
+    "initialRoute": "/",
+    "enableOnboarding": false
+  },
+  "features": {
+    "courseCatalog": true,
+    "lessonReader": true,
+    "quizEngine": true,
+    "progressTracking": true,
+    "learningPaths": true,
+    "bookmarks": true,
+    "notes": false,
+    "search": true,
+    "assessments": true,
+    "flashcards": false,
+    "spacedRepetition": false,
+    "interactiveExercises": true,
+    "codePlayground": false,
+    "learningHistory": true,
+    "achievements": true,
+    "learningStreaks": true,
+    "dailyChallenges": false,
+    "certificates": false,
+    "offlineMode": true,
+    "downloads": true,
+    "cloudSync": false,
+    "userAccounts": false,
+    "socialSharing": false,
+    "recommendations": true,
+    "contentRating": false,
+    "themeSwitcher": true,
+    "fontSizeAdjustment": true,
+    "languageSwitcher": true,
+    "premiumFeatures": false,
+    "advertisements": false,
+    "helpCenter": true,
+    "feedback": true,
+    "analytics": false,
+    "crashReporting": false,
+    "pushNotifications": false,
+    "reminderNotifications": false
+  },
+  "localization": {
+    "defaultLocale": "en",
+    "supportedLocales": ["en", "id"],
+    "fallbackLocale": "en",
+    "showLanguageSwitcher": true
+  },
+  "content": {
+    "bundledEnabled": true,
+    "remoteEnabled": false,
+    "contentVersion": "1.0.0",
+    "updateCheckIntervalHours": 24
+  }
+}
